@@ -123,6 +123,14 @@ class MiaVideo extends \Illuminate\Database\Eloquent\Model
     {
         return $this->belongsTo(MIAUser::class, 'creator_id');
     }
+    /**
+    * 
+    * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
+    */
+    public function categories()
+    {
+        return $this->belongsToMany(MiaCategory::class, MiaVideoCategory::class, 'video_id', 'category_id');
+    }
 
 
     /**
