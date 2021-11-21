@@ -3,6 +3,7 @@
 namespace Mia\Video\Model;
 
 use Mia\Auth\Model\MIAUser;
+use Mia\Category\Model\MiaCategory;
 
 /**
  * Description of Model
@@ -129,7 +130,7 @@ class MiaVideo extends \Illuminate\Database\Eloquent\Model
     */
     public function categories()
     {
-        return $this->belongsToMany(MiaCategory::class, MiaVideoCategory::class, 'video_id', 'category_id');
+        return $this->belongsToMany(MiaCategory::class, 'mia_video_category', 'video_id', 'category_id');
     }
 
 
