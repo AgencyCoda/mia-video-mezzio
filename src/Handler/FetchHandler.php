@@ -1,6 +1,6 @@
 <?php
 
-namespace Mia\Video\Handler\MiaVideo;
+namespace Mia\Video\Handler;
 
 use Mia\Core\Exception\MiaException;
 

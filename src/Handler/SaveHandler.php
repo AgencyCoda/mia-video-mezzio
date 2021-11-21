@@ -1,6 +1,6 @@
 <?php
 
-namespace Mia\Video\Handler\MiaVideo;
+namespace Mia\Video\Handler;
 
 /**
  * Description of SaveHandler
